@@ -1,5 +1,6 @@
 ﻿using Investoras_Backend.Data;
 using Investoras_Backend.Models;
+using Investoras_Backend.Models.Updaters;
 using Microsoft.AspNetCore.Mvc;
 using static System.Net.Mime.MediaTypeNames;
 

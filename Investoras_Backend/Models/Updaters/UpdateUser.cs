@@ -1,4 +1,4 @@
-﻿namespace Investoras_Backend.Models
+﻿namespace Investoras_Backend.Models.Updaters
 {
     public class UpdateUser
     {
