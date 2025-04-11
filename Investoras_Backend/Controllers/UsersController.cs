@@ -1,6 +1,7 @@
 ﻿using Investoras_Backend.Data;
 using Investoras_Backend.Models;
 using Investoras_Backend.Models.Updaters;
+using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
 using static System.Net.Mime.MediaTypeNames;
 
@@ -29,7 +30,8 @@ public class UsersController : ControllerBase
         {
             Username = AddUser.Username,
             Email = AddUser.Email,
-            Password = AddUser.Password
+            Password = AddUser.Password,
+            CreatedAt = DateTime.UtcNow
         };
 
 
@@ -50,6 +52,7 @@ public class UsersController : ControllerBase
         user.Username = UpdateUser.Username;
         user.Password = UpdateUser.Password;
         user.Email = UpdateUser.Email;
+        user.CreatedAt = DateTime.UtcNow;
         dbContext.SaveChanges();
         return Ok(user);
     }

@@ -1,10 +1,7 @@
-﻿using System.Transactions;
-
-namespace Investoras_Backend.Models
+﻿namespace Investoras_Backend.Models.Updaters
 {
-    public class Account
+    public class UpdateAccount
     {
-        public int AccountId { get; set; }
         public string Name { get; set; }
         public decimal Balance { get; set; }
         public DateTime CreatedAt { get; set; }
