@@ -20,8 +20,8 @@ public class UsersController : ControllerBase
     [HttpGet]
     public IActionResult GetAllUsers()
     {
-        var allImages = dbContext.Users.ToList();
-        return Ok(allImages);
+        var allUsers = dbContext.Users.ToList();
+        return Ok(allUsers);
     }
     [HttpPost]
     public IActionResult AddUser(UpdateUser AddUser)
